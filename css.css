@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Gotham', 'Gill Sans', 'Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   /* login */
   #secaol{
@@ -255,76 +255,137 @@
     float: left;
     width: 300px;
     border-radius: 10px;
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(23, 23, 23);
   }
   
   #ini-bus{
+    display: flex;
     list-style-type: none;
     color: #c2c2c2;
+    font-family: 'Gotham', 'Gill Sans', 'Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     font-weight: 500;
-    margin-left: 20px;
+    margin-left: 25px;
+    transition: color 0.4s;
+  }
+
+  #ini-bus:hover{
+    color: white;
   }
   
   .inicio{
-    display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   
   #home{
-    margin-left: 40px;
-    width: 25px;
+    width: 20px;
     filter: brightness(0) saturate(100%) invert(72%) sepia(3%) saturate(17%) hue-rotate(65deg) brightness(106%) contrast(97%);
   }
-  
-  .buscar{
-    display: flex;
+
+  #ini-escrita{
+    margin-left:20px;
   }
   
   #loupe{
-    margin-left: 40px;
-    width: 25px;
+    width: 20px;
     filter: brightness(0) saturate(100%) invert(72%) sepia(3%) saturate(17%) hue-rotate(65deg) brightness(106%) contrast(97%);
+  }
+
+  #bus-escrita{
+    margin-left: 20px;
   }
   
   #white-spotify{
-    width: 110px;
-    margin-left: 37px;
+    width: 80px;
+    margin-left: 23px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
   
   .box-lib{
-    margin: 9px;
+    margin-left: 9px;
     margin-right: 0;
     padding-bottom: 20px;
     float: left;
     width: 300px;
     border-radius: 10px;
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(23, 23, 23);
   }
   
   .bibli{
     display: flex;
-    margin-top: 20px;
   }
   
   #library{
-    margin-left: 40px;
-    width: 25px;
+    margin-top: 20px;
+    margin-left: 23px;
+    width: 28px;
+    height: 28px;
     filter: brightness(0) saturate(100%) invert(72%) sepia(3%) saturate(17%) hue-rotate(65deg) brightness(106%) contrast(97%);
   }
   
   #sua-bib{
     color: #c2c2c2;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     font-weight: 500;
+    margin-left: 15px;
+    margin-top: 25px;
+  }
+
+  #more{
+    margin-left: 80px;
+    background-color: #ffffff00;
+    border: 0;
+    color: #c2c2c2;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 16px;
+    transition: color 0.4s;
+  }
+
+  #more:hover{
+    cursor: pointer;
+    color: white;
+  }
+
+  .box-playlist{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: rgb(42, 42, 42);
+    width: 284px;
+    border-radius: 5px;
+  }
+
+  #h2-plist{
     margin-left: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
   }
   
+  #escrita1{
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Gotham', 'Gill Sans', 'Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  #criar-playlist{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    width: 120px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px solid white;
+  }
+
   #coldplay{
     margin: 9px;
     margin-left: 2;
