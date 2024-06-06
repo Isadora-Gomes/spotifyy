@@ -6,7 +6,7 @@
   /* login */
   #secaol{
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(65,63,63,0.9809173669467787) 100%);
-    height: 200vh;
+    height: 160vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,10 +19,15 @@
     align-items: center;
     flex-direction: column;
     background-color: black;
-    width: 550px;
-    height: 1000px;
-    padding: 100px;
+    width: 620px;
+    height: 900px;
+    padding: 60px;
     border-radius: 10px;
+    margin-top: 30px;
+  }
+  #logol{
+    width: 45px;
+    margin-bottom: 20px;
   }
   #continuar{
     color: white;
@@ -31,7 +36,7 @@
   }
   #continuar h1{
     margin-bottom: 30px;
-    font-size: 35px;
+    font-size: 32px;
   }
   #continuar p{
     border: 1px solid gray;
@@ -40,9 +45,6 @@
     font-size: 16px;
     width: 300px;
     margin: 5px;
-  }
-  #continuar a, .apps p:hover{
-  border-color: white;
   }
   #continuar a, .apps p{
   text-decoration: none;
@@ -70,12 +72,20 @@
   }
   
   .login hr{
-  margin-top: 30px;
+  margin-top: 40px;
   }
   #conta p{
   color: gray;
   display: inline-block;
   margin-top: 80px;
+  }
+ #continuar p:hover{
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    margin: 5px;
   }
   #conta{
   text-align: center;
@@ -196,6 +206,24 @@
     margin-left: auto;
     margin-right: auto;
     margin: 0%;
+  }
+  footer{
+    background-color: rgb(52, 52, 52);
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: 40px;
+    width: 97%;
+    bottom: 0;
+    font-size: 12px;
+    margin-top: 45px;
+  }
+  footer a{
+    color: gray;
+    font-size: 12px;
   }
   
   /* player */
