@@ -208,7 +208,7 @@
     margin-right: auto;
     margin: 0%;
   }
-  footer{
+  #footer-login{
     background-color: rgb(25, 24, 24);
     color: gray;
     display: flex;
@@ -222,7 +222,7 @@
     font-size: 12px;
     margin-top: 45px;
   }
-  footer a{
+  #login-footer-a{
     color: gray;
     font-size: 12px;
   }
@@ -232,7 +232,7 @@
     display: flex;
     flex-direction: row;
     background-color: black;
-    height: 110vh;
+    height: 100%;
   }
   
   .esquerda{
@@ -245,7 +245,8 @@
   .direita{
     display: flex;
     float: right;
-    margin-left: 310px;
+    margin-left: 323px;
+    width: 100%;
   }
   
   .box-ini-bus{
@@ -253,7 +254,7 @@
     margin-right: 0;
     padding-bottom: 20px;
     float: left;
-    width: 300px;
+    width: 315px;
     border-radius: 10px;
     background-color: rgb(23, 23, 23);
   }
@@ -308,7 +309,7 @@
     margin-right: 0;
     padding-bottom: 20px;
     float: left;
-    width: 300px;
+    width: 315px;
     border-radius: 10px;
     background-color: rgb(23, 23, 23);
   }
@@ -334,7 +335,7 @@
   }
 
   #more{
-    margin-left: 80px;
+    margin-left: 89px;
     background-color: #ffffff00;
     border: 0;
     color: #c2c2c2;
@@ -355,31 +356,52 @@
     margin-top: 20px;
     padding-top: 20px;
     background-color: rgb(42, 42, 42);
-    width: 284px;
+    width: 293px;
     border-radius: 5px;
   }
 
-  #h2-plist{
-    margin-left: 20px;
+  #h2-bibli{
+    margin-left: 17px;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
   }
   
   #escrita1{
     color: white;
-    margin-left: 20px;
+    margin-left: 17px;
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     font-family: 'Gotham', 'Gill Sans', 'Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
   #criar-playlist{
-    margin-left: 20px;
+    margin-left: 17px;
     margin-top: 20px;
     margin-bottom: 16px;
     width: 120px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px solid white;
+  }
+
+  .box-podcast{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: rgb(42, 42, 42);
+    width: 293px;
+    border-radius: 5px;
+  }
+
+  #explore-podc{
+    margin-left: 17px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    width: 150px;
     height: 30px;
     font-weight: bold;
     border-radius: 30px;
@@ -390,6 +412,17 @@
     margin: 9px;
     margin-left: 2;
     float: right;
-    width: 1190px;
+    width: 100%;
     height: 720px;
+  }
+
+  .era-pra-ser-um-footer{
+    z-index: 10;
+    float: left;
+    margin: 9px;
+    margin-right: 0;
+    padding-bottom: 20px;
+    width: 315px;
+    border-radius: 10px;
+    background-color: rgb(23, 23, 23);
   }
