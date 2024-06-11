@@ -228,7 +228,203 @@
   }
   
   /* player */
-  #player1{
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+#player1{
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  height: 100%;
+}
+
+.esquerda{
+  position: fixed;
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+}
+
+.direita{
+  display: flex;
+  float: right;
+  margin-left: 323px;
+  width: 100%;
+}
+
+.box-ini-bus{
+  margin: 9px;
+  margin-right: 0;
+  padding-bottom: 20px;
+  float: left;
+  width: 315px;
+  border-radius: 10px;
+  background-color: rgb(23, 23, 23);
+}
+
+#ini-bus{
+  display: flex;
+  list-style-type: none;
+  color: #c2c2c2;
+  font-family: 'Gotham', 'Gill Sans', 'Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.4s;
+}
+
+#ini-bus, #bus-escrita, #sua-bib:hover{
+  color: white;
+}
+
+.inicio{
+  margin-bottom: 25px;
+}
+
+#home{
+  width: 20px;
+  filter: brightness(0) saturate(100%) invert(72%) sepia(3%) saturate(17%) hue-rotate(65deg) brightness(106%) contrast(97%);
+}
+
+#ini-escrita{
+  margin-left:20px;
+}
+
+#loupe{
+  width: 20px;
+  filter: brightness(0) saturate(100%) invert(72%) sepia(3%) saturate(17%) hue-rotate(65deg) brightness(106%) contrast(97%);
+}
+
+#bus-escrita{
+  margin-left: 20px;
+}
+
+#white-spotify{
+  width: 80px;
+  margin-left: 23px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.box-lib{
+  margin-left: 9px;
+  margin-right: 0;
+  padding-bottom: 20px;
+  float: left;
+  width: 315px;
+  border-radius: 10px;
+  background-color: rgb(23, 23, 23);
+}
+
+.bibli{
+  display: flex;
+}
+
+#library{
+  margin-top: 20px;
+  margin-left: 23px;
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) saturate(100%) invert(72%) sepia(3%) saturate(17%) hue-rotate(65deg) brightness(106%) contrast(97%);
+}
+
+#sua-bib{
+  color: #c2c2c2;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
+#more{
+  margin-left: 89px;
+  background-color: #ffffff00;
+  border: 0;
+  color: #c2c2c2;
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 16px;
+  transition: color 0.4s;
+}
+
+#more:hover{
+  cursor: pointer;
+  color: white;
+}
+
+.box-playlist{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: rgb(42, 42, 42);
+  width: 293px;
+  border-radius: 5px;
+}
+
+#h2-bibli{
+  margin-left: 17px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#escrita1{
+  color: white;
+  margin-left: 17px;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Gotham', 'Gill Sans', 'Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#criar-playlist{
+  margin-left: 17px;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  width: 120px;
+  height: 30px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid white;
+}
+
+.box-podcast{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: rgb(42, 42, 42);
+  width: 293px;
+  border-radius: 5px;
+}
+
+#explore-podc{
+  margin-left: 17px;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid white;
+}
+
+#coldplay{
+  margin: 9px;
+  margin-left: 2;
+  float: right;
+  width: 100%;
+  height: 720px;
+}
+
+ #player1, #homepage{
     display: flex;
     flex-direction: row;
     background-color: black;
@@ -271,7 +467,7 @@
     transition: color 0.4s;
   }
 
-  #ini-bus:hover{
+  #ini-bus, #bus-escrita, #sua-bib:hover{
     color: white;
   }
   
@@ -416,13 +612,58 @@
     height: 720px;
   }
 
-  .era-pra-ser-um-footer{
-    z-index: 10;
-    float: left;
+  .politicas{
+    text-align: left;
     margin: 9px;
-    margin-right: 0;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    height: 200px;
     width: 315px;
     border-radius: 10px;
     background-color: rgb(23, 23, 23);
+}
+
+.politicas a {
+    text-decoration: none;
+    color: gray;
+    display: block;
+    margin: 8px 0;
+    margin-left: 30px;
+    font-size: 13px;
+}
+
+.politicas button{
+    background-color: #ffffff00;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 12px;
+    transition: color 0.4s, border-color 0.4s;
+}
+
+.politicas button:hover {
+    cursor: pointer;
+    color: white;
+    border-color: rgb(231, 230, 230);
+}
+.right{
+    display: block;
+    margin-left: 330px;
+    width: 100%;
+    background-color: #121212;
+    margin-top: 50px;
+    padding: 30px;
+}
+.right a{
+  color: white;
+  text-decoration: none;
   }
+  .right h2{
+  margin-top: 30px;
+}
+.right a:hover{
+  text-decoration:underline;
+}
+#album{
+  margin-top: 70px;
+}
