@@ -646,6 +646,7 @@
     color: white;
     border-color: rgb(231, 230, 230);
 }
+/* homapage */
 .right{
     display: block;
     margin-left: 330px;
@@ -664,6 +665,22 @@
 .right a:hover{
   text-decoration:underline;
 }
+.right #ph{
+  width: 170px;
+}
+.right img{
+  margin-top: 20px;
+  width: 180px;
+}
 #album{
   margin-top: 70px;
+  }
+  #album img{
+  width: 170px;
+  border-radius: 7px;
+  margin: 7px;
+  margin-top: 35px;
+}
+#album p {
+  font-weight: bold;
 }
