@@ -1,7 +1,23 @@
+/* Gabriel Reis e Isadora */
 *{
     margin: 0;
     padding: 0;
     font-family: 'Gotham', 'Gill Sans', 'Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
   /* login */
   #secaol{
@@ -674,13 +690,24 @@
 }
 #album{
   margin-top: 70px;
-  }
-  #album img{
+}
+
+#album img{
   width: 170px;
   border-radius: 7px;
   margin: 7px;
   margin-top: 35px;
 }
-#album p {
-  font-weight: bold;
+#artista{ 
+  color: gray;
+}
+#nome-album, #nome-cantor, #artista p {
+  display: inline-flex;
+  margin: 7px;
+  font-size: 14px;
+}
+#nome-cantor, #artista{
+  text-align: left;
+  display: flex;
+  justify-content: space-between
 }
