@@ -448,16 +448,16 @@
   }
   
   .esquerda{
-    position: fixed;
     width: 310px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
   }
   
   .direita{
     display: flex;
     float: right;
     margin-left: 323px;
+    margin-top: 48px;
     width: 100%;
   }
   
@@ -544,6 +544,7 @@
     font-weight: 500;
     margin-left: 15px;
     margin-top: 25px;
+    cursor: default;
   }
 
   #more{
@@ -597,6 +598,7 @@
     font-weight: bold;
     border-radius: 30px;
     border: 2px solid white;
+    cursor: pointer;
   }
 
   .box-podcast{
@@ -618,13 +620,49 @@
     font-weight: bold;
     border-radius: 30px;
     border: 2px solid white;
+    cursor: pointer;
+  }
+
+  .cold-barra{
+    margin-left: 330px;
+    background-color: black;
+    width: 1020px;
+    color: black;
+    position: fixed;
+  }
+
+  .cold-top{  
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 9px;
+    background-color: #236d9e;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    margin-left: 330px;
+    width: 1010px;
+    height: 58px;
+    padding-left: 8px;
+  }
+
+  #cold-seta{
+    margin-top: 15px;
+    margin-left: 8px;
+    background-color: rgba(0, 0, 0, 0.596);
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.671);
+    cursor: pointer;
   }
 
   #coldplay{
-    margin: 9px;
-    margin-left: 2;
+    margin: 7px;
     float: right;
-    width: 100%;
+    width: 1018px;
     height: 720px;
   }
 
@@ -636,6 +674,8 @@
     width: 315px;
     border-radius: 10px;
     background-color: rgb(23, 23, 23);
+    z-index: 60;
+    margin-bottom: 200px;
 }
 
 .politicas a {
@@ -662,52 +702,142 @@
     color: white;
     border-color: rgb(231, 230, 230);
 }
+
 /* homapage */
+.barra{
+  margin-left: 330px;
+  background-color: black;
+  width: 1027px;
+  color: black;
+  position: fixed;
+}
+
+.top{  
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 9px;
+  background-color: #0c0c0c;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  margin-left: 330px;
+  height: 58px;
+  padding-left: 8px;
+}
+
+#seta{
+  margin-top: 15px;
+  margin-left: 8px;
+  background-color: rgba(0, 0, 0, 0.904);
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.671);
+  cursor: pointer;
+}
+
+#insc{
+  margin-left: 700px;
+  margin-right: 15px;
+  margin-top: 20px;
+  width: 100px;
+  border: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.671);
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#ent{
+  width: 90px;
+  background-color: white;
+  margin-right: 37px;
+  margin-top: 8px;
+  border-radius: 50px;
+  border: solid white;
+  font-weight: 600;
+  height: 40px;
+  cursor: pointer;
+}
+
 .right{
     display: block;
+    margin-top: 55px;
     margin-left: 330px;
     width: 100%;
     background-color: #121212;
-    margin-top: 50px;
     padding: 30px;
 }
 .right a{
   color: white;
   text-decoration: none;
   }
-  .right h2{
-  margin-top: 30px;
-}
 .right a:hover{
   text-decoration:underline;
 }
-.right #ph{
-  width: 170px;
+.artistas{
+  display: flex;
+  flex-direction: row;
 }
-.right img{
+#perfil{
+  margin-left: 6px;
+  cursor: pointer;
+}
+.right #artista-img{
+  width: 145px;
+  margin-left: 9px;
   margin-top: 20px;
-  width: 180px;
 }
+
 #album{
   margin-top: 70px;
 }
-
-#album img{
-  width: 170px;
+#albuns{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+#img-art-alb{
+  width: 140px;
   border-radius: 7px;
-  margin: 7px;
+  margin: 10px;
   margin-top: 35px;
 }
 #artista{ 
   color: gray;
 }
-#nome-album, #nome-cantor, #artista p {
-  display: inline-flex;
-  margin: 7px;
+#nome-art, #artista{
+  margin-left: 15px;
   font-size: 14px;
+  font-weight: 500;
 }
-#nome-cantor, #artista{
-  text-align: left;
-  display: flex;
-  justify-content: space-between
+#nome-do-album{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.play-but{
+  width: 35px;
+  opacity: 0;
+  margin-left: 120px;
+  position:relative;
+  top: -50px;
+  transition: top ease 0.3s, opacity 0.3s;
+  cursor: pointer;
+}
+
+#perfil:hover .play-but{
+  opacity: 1;
+  top: -70px;
+}
+
+.album-e-nome:hover .play-but{
+  opacity: 1;
+  top: -70px;
 }
